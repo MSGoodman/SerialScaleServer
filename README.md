@@ -1,4 +1,4 @@
-Serial Scale Server<!--  --> ![Serial Scale Server Icon](http://mikesgoodman.com/serial%20scale%20server.png)
+Serial Scale Server
 ====
 Browsers don't have the ability to access devices connected via serial port, which is unfortunate for people who wish to use postal scales or other old hardware from a website. A somewhat-convoluted but actually rather simple solution is to spin up a quick flask webserver on the local device that creates an http interface between the COM port and the browser.
 
