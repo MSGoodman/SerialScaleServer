@@ -3,7 +3,7 @@ Serial Scale Server
 Browsers don't have the ability to access devices connected via serial port, which is unfortunate for people who wish to use postal scales or other old hardware from a website. A somewhat-convoluted but actually rather simple solution is to spin up a quick flask webserver on the local device that creates an http interface between the COM port and the browser.
 
 # How To Use
-Just download the code, run `pip install -r requirements.txt` to get the necessary libraries (using a virtualenv is suggested but not necessary), and call `python -m app` from the package directory, at which point the scale server methods should be accessible at localhost's port 5000. You can optionally pass a command line argument of the COM port to use by default, for example `python -m app COM2`.
+First, make sure you have [Python 3](https://www.python.org/) installed. Then, just download the code, run `pip install -r requirements.txt` to get the necessary libraries (using a virtualenv is suggested but not necessary), and call `python -m app` from the package directory, at which point the scale server methods should be accessible at localhost's port 5000. You can optionally pass a command line argument of the COM port to use by default, for example `python -m app COM2`.
 # How It Works
 ## The Scale
 The **SerialScaleServer** object is essentially a wrapper around the [pySerial library](https://pythonhosted.org/pyserial/), applied specifically to interact with a scale. It has a few useful methods:
